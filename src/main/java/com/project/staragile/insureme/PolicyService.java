@@ -10,34 +10,22 @@ public class PolicyService {
 	@Autowired
 	PolicyRepository policyRepository;
 	
-	
 	public Policy CreatePolicy() {
-		
 		Policy policy = generateDummyPolicy();
-		
 		return policyRepository.save(policy);
-		
-			
 	}
-	
 	public Policy updatePolicy() {
-		
 		return null;
 	}
-	
 	public Policy deletePolicy() {
-		
 		return null;
 	}
-	
 	public Policy searchPolicy() {
 		
 		return null;
 	}
-	
-	
 	public Policy generateDummyPolicy() {
-		return new Policy(1, "Shubham", "Individual" , 10000, "10-Sep-2021", "10-Sep-2022");
+		return new Policy(1, "Prasad", "Individual" , 15000, "20-Nov-2023", "19-Nov-2024");
 	}
 
 	public Policy registerPolicy(Policy policy) {
